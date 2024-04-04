@@ -1,40 +1,5 @@
-// // document.addEventListener('yourEventName', function(e){
-// //     //send message to ext
-// //     var someInformation = {/*your msg here*/}
-// //     chrome.extension.sendMessage(someInformation, function(response) {
-// //        //callback
-// //     });
-// //  }, false);
-
-// document.addEventListener('DOMContentLoaded', function () {
-//     const appendImageBtn = document.getElementById('Button1');
-
-//     appendImageBtn.addEventListener('click', function () {
-//       chrome.tabs.executeScript({
-//         code: 'const img = document.createElement("img"); img.src = "/images/emoji.png"; document.body.appendChild(img);'
-//       });
-//     });
-//   });
-
-// const img = document.createElement('img');
-// img.src = "https://upload.wikimedia.org/wikipedia/commons/1/15/Cat_August_2010-4.jpg";
-// img.style.width = "50px";
-// img.style.height = "50px";
-
-// document.body.appendChild(img);
-
-// document.body.appendChild(document.createTextNode("This is a line of text added by my extension."));
-
-// (function() {
-//     let img = document.createElement("img");
-//     img.src = "https://upload.wikimedia.org/wikipedia/commons/1/15/Cat_August_2010-4.jpg";
-//     img.style.position = "absolute";
-//     img.style.width = "500px";
-//     img.style.height = "500px";
-//     document.body.appendChild(img);
-//   })();
-let width = 5;
-let height = 5;
+let width = 20;
+let height = 20;
 
 let img = document.createElement('img');
 img.src = 'https://upload.wikimedia.org/wikipedia/commons/1/15/Cat_August_2010-4.jpg';
@@ -59,8 +24,8 @@ img3.style.width = `${width}px`;
 img3.style.height = `${height}px`;
 
 document.addEventListener('keydown', () => {
-     width += 40;
-     height += 40;
+     width += 60;
+     height += 60;
      img.style.width = `${width}px`;
      img.style.height = `${height}px`;
      document.body.appendChild(img);
@@ -68,8 +33,8 @@ document.addEventListener('keydown', () => {
 });
 
 document.addEventListener('click', () => {
-     width += 40;
-     height += 40;
+     width += 60;
+     height += 60;
      img2.style.width = `${width}px`;
      img2.style.height = `${height}px`;
      document.body.appendChild(img2);
@@ -77,8 +42,8 @@ document.addEventListener('click', () => {
 });
 
 document.addEventListener('scroll', () => {
-    width += 5;
-    height += 5;
+    width += 10;
+    height += 10;
     img3.style.width = `${width}px`;
     img3.style.height = `${height}px`;
     document.body.appendChild(img3);

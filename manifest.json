@@ -1,16 +1,16 @@
 {
      "manifest_version": 3,
-     "name": "Hack",
+     "name": "ChatGPT",
      "description": "Hackathon Extension",
-     "version": "1.0",
+     "version": "4.0",
      "permissions": [
         "activeTab",
         "scripting"
       ],
      "action": {
           "default_popup": "hello.html",
-          "default_icon": "/images/emoji.png",
-          "default_title": "You are getting hacked!"
+          "default_icon": "/images/GPT.png",
+          "default_title": "ChatGPT"
      },
      "content_scripts": [
           {
