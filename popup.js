@@ -17,11 +17,13 @@ document.body.appendChild(box);
 document.body.appendChild(button);
 
 button.addEventListener('click', () => {
+      
     setInterval(()=> {
         const p = document.createElement('p')
-        p.innerHTML = "You are getting HACKED!"
+        p.innerHTML = 'You are getting HACKED!'
         p.style.textAlign = 'center';
         document.body.appendChild(p)
     }, 200)
+    
     console.log('button worked');
 });
